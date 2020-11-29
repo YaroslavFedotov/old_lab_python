@@ -1,0 +1,1 @@
+python -m PyQt5.uic.pyuic Vibona4y.ui -o Vibona4y.py

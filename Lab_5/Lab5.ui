@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MatrixMultiptionWindow</class>
+ <widget class="QMainWindow" name="MatrixMultiptionWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>758</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Умножение матриц</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="plainTextEditMatrix_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>191</width>
+      <height>181</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEditMatrix_2">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>30</y>
+      <width>201</width>
+      <height>181</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LabelMatrix1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Матрица 1:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LabelMatrix2">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>0</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Матрица 2:</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEditResultMultiplicationMatrix">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>191</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LabelResult">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Результат:</string>
+    </property>
+    <property name="openExternalLinks">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonStayAlgoMultiptication">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>260</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Обычный алгоритм умножения</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LabelMultiplicationTasks">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>230</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Задачи умножения:</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonPerebor">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>290</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Метод перебора вариантов</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonMaxBuyPodTasks">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>320</y>
+      <width>381</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Метод нахождения максимальной стоимости для подзадач</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonOptimalRastBackets">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>350</y>
+      <width>381</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Метод оптимальной расстановки скобок </string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonRekyrsyvniyAlgoMultiplicationMatrix">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>380</y>
+      <width>381</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Рекурсивный алгоритм для перемножения матриц</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonMemoizationMultiplicationMatrix">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>410</y>
+      <width>381</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Алгоритм с мемоизацией для умножения матриц</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonAlgoInputResultMultiplicationMatrixRasstavSkobkamyNaScreen">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>440</y>
+      <width>541</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Алгоритм вывода результата умножения матриц с расставленными скобками на экран </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonResult">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>180</y>
+      <width>351</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Решить выбранную задачу</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonFileResult">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>140</y>
+      <width>351</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Запись в файл</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LabelTasksProgramm">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>30</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Задачи программы:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

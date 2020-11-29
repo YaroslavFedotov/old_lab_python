@@ -1,0 +1,98 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'Lab5.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.1
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MatrixMultiptionWindow(object):
+    def setupUi(self, MatrixMultiptionWindow):
+        MatrixMultiptionWindow.setObjectName("MatrixMultiptionWindow")
+        MatrixMultiptionWindow.resize(758, 492)
+        self.centralwidget = QtWidgets.QWidget(MatrixMultiptionWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.plainTextEditMatrix_1 = QtWidgets.QPlainTextEdit(self.centralwidget)
+        self.plainTextEditMatrix_1.setGeometry(QtCore.QRect(10, 30, 191, 181))
+        self.plainTextEditMatrix_1.setObjectName("plainTextEditMatrix_1")
+        self.plainTextEditMatrix_2 = QtWidgets.QPlainTextEdit(self.centralwidget)
+        self.plainTextEditMatrix_2.setGeometry(QtCore.QRect(550, 30, 201, 181))
+        self.plainTextEditMatrix_2.setObjectName("plainTextEditMatrix_2")
+        self.LabelMatrix1 = QtWidgets.QLabel(self.centralwidget)
+        self.LabelMatrix1.setGeometry(QtCore.QRect(10, 0, 191, 31))
+        self.LabelMatrix1.setObjectName("LabelMatrix1")
+        self.LabelMatrix2 = QtWidgets.QLabel(self.centralwidget)
+        self.LabelMatrix2.setGeometry(QtCore.QRect(550, 0, 191, 31))
+        self.LabelMatrix2.setObjectName("LabelMatrix2")
+        self.plainTextEditResultMultiplicationMatrix = QtWidgets.QPlainTextEdit(self.centralwidget)
+        self.plainTextEditResultMultiplicationMatrix.setGeometry(QtCore.QRect(10, 240, 191, 221))
+        self.plainTextEditResultMultiplicationMatrix.setReadOnly(True)
+        self.plainTextEditResultMultiplicationMatrix.setObjectName("plainTextEditResultMultiplicationMatrix")
+        self.LabelResult = QtWidgets.QLabel(self.centralwidget)
+        self.LabelResult.setGeometry(QtCore.QRect(10, 210, 191, 31))
+        self.LabelResult.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.LabelResult.setOpenExternalLinks(False)
+        self.LabelResult.setObjectName("LabelResult")
+        self.radioButtonStayAlgoMultiptication = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioButtonStayAlgoMultiptication.setGeometry(QtCore.QRect(210, 260, 221, 20))
+        self.radioButtonStayAlgoMultiptication.setObjectName("radioButtonStayAlgoMultiptication")
+        self.LabelMultiplicationTasks = QtWidgets.QLabel(self.centralwidget)
+        self.LabelMultiplicationTasks.setGeometry(QtCore.QRect(210, 230, 211, 31))
+        self.LabelMultiplicationTasks.setObjectName("LabelMultiplicationTasks")
+        self.radioButtonPerebor = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioButtonPerebor.setGeometry(QtCore.QRect(210, 290, 211, 20))
+        self.radioButtonPerebor.setObjectName("radioButtonPerebor")
+        self.radioButtonMaxBuyPodTasks = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioButtonMaxBuyPodTasks.setGeometry(QtCore.QRect(210, 320, 381, 16))
+        self.radioButtonMaxBuyPodTasks.setObjectName("radioButtonMaxBuyPodTasks")
+        self.radioButtonOptimalRastBackets = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioButtonOptimalRastBackets.setGeometry(QtCore.QRect(210, 350, 381, 16))
+        self.radioButtonOptimalRastBackets.setObjectName("radioButtonOptimalRastBackets")
+        self.radioButtonRekyrsyvniyAlgoMultiplicationMatrix = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioButtonRekyrsyvniyAlgoMultiplicationMatrix.setGeometry(QtCore.QRect(210, 380, 381, 16))
+        self.radioButtonRekyrsyvniyAlgoMultiplicationMatrix.setObjectName("radioButtonRekyrsyvniyAlgoMultiplicationMatrix")
+        self.radioButtonMemoizationMultiplicationMatrix = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioButtonMemoizationMultiplicationMatrix.setGeometry(QtCore.QRect(210, 410, 381, 16))
+        self.radioButtonMemoizationMultiplicationMatrix.setObjectName("radioButtonMemoizationMultiplicationMatrix")
+        self.radioButtonAlgoInputResultMultiplicationMatrixRasstavSkobkamyNaScreen = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioButtonAlgoInputResultMultiplicationMatrixRasstavSkobkamyNaScreen.setGeometry(QtCore.QRect(210, 440, 541, 16))
+        self.radioButtonAlgoInputResultMultiplicationMatrixRasstavSkobkamyNaScreen.setObjectName("radioButtonAlgoInputResultMultiplicationMatrixRasstavSkobkamyNaScreen")
+        self.pushButtonResult = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButtonResult.setGeometry(QtCore.QRect(200, 180, 351, 28))
+        self.pushButtonResult.setObjectName("pushButtonResult")
+        self.pushButtonFileResult = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButtonFileResult.setGeometry(QtCore.QRect(200, 140, 351, 28))
+        self.pushButtonFileResult.setObjectName("pushButtonFileResult")
+        self.LabelTasksProgramm = QtWidgets.QLabel(self.centralwidget)
+        self.LabelTasksProgramm.setGeometry(QtCore.QRect(200, 30, 351, 31))
+        self.LabelTasksProgramm.setAlignment(QtCore.Qt.AlignCenter)
+        self.LabelTasksProgramm.setObjectName("LabelTasksProgramm")
+        MatrixMultiptionWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MatrixMultiptionWindow)
+        self.statusbar.setObjectName("statusbar")
+        MatrixMultiptionWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MatrixMultiptionWindow)
+        QtCore.QMetaObject.connectSlotsByName(MatrixMultiptionWindow)
+
+    def retranslateUi(self, MatrixMultiptionWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MatrixMultiptionWindow.setWindowTitle(_translate("MatrixMultiptionWindow", "Умножение матриц"))
+        self.LabelMatrix1.setText(_translate("MatrixMultiptionWindow", "Матрица 1:"))
+        self.LabelMatrix2.setText(_translate("MatrixMultiptionWindow", "Матрица 2:"))
+        self.LabelResult.setText(_translate("MatrixMultiptionWindow", "Результат:"))
+        self.radioButtonStayAlgoMultiptication.setText(_translate("MatrixMultiptionWindow", "Обычный алгоритм умножения"))
+        self.LabelMultiplicationTasks.setText(_translate("MatrixMultiptionWindow", "Задачи умножения:"))
+        self.radioButtonPerebor.setText(_translate("MatrixMultiptionWindow", "Метод перебора вариантов"))
+        self.radioButtonMaxBuyPodTasks.setText(_translate("MatrixMultiptionWindow", "Метод нахождения максимальной стоимости для подзадач"))
+        self.radioButtonOptimalRastBackets.setText(_translate("MatrixMultiptionWindow", "Метод оптимальной расстановки скобок "))
+        self.radioButtonRekyrsyvniyAlgoMultiplicationMatrix.setText(_translate("MatrixMultiptionWindow", "Рекурсивный алгоритм для перемножения матриц"))
+        self.radioButtonMemoizationMultiplicationMatrix.setText(_translate("MatrixMultiptionWindow", "Алгоритм с мемоизацией для умножения матриц"))
+        self.radioButtonAlgoInputResultMultiplicationMatrixRasstavSkobkamyNaScreen.setText(_translate("MatrixMultiptionWindow", "Алгоритм вывода результата умножения матриц с расставленными скобками на экран "))
+        self.pushButtonResult.setText(_translate("MatrixMultiptionWindow", "Решить выбранную задачу"))
+        self.pushButtonFileResult.setText(_translate("MatrixMultiptionWindow", "Запись в файл"))
+        self.LabelTasksProgramm.setText(_translate("MatrixMultiptionWindow", "Задачи программы:"))

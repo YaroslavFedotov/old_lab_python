@@ -1,0 +1,1 @@
+python -m PyQt5.uic.pyuic MatrixOperation.ui -o MatrixOperation.py
